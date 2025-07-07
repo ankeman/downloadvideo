@@ -1,4 +1,10 @@
 body {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 16px;
     background-color: #0f0f0f;
     color: #00ffea;
     font-family: 'Courier New', Courier, monospace;
@@ -55,4 +61,7 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: #e600ac;
+}
+footer {
+    font-weight: 500;
 }

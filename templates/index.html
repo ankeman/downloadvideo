@@ -17,7 +17,7 @@
 <body>
     <canvas id="matrixCanvas"></canvas>
 
-    <h1>⚡ Welcome to the Cyberpunk Video Hub ⚡<br><br>YouTube & TikTok Downloader</h1>
+    <h1 align="center">⚡ Welcome to the Video Downloader ⚡<br><br>YouTube & TikTok Downloader</h1>
 
     <h2>🎥 Enter the URL of the YouTube video you want to download:</h2>
     <form action="/download_youtube" method="post">
@@ -31,33 +31,13 @@
         <input type="submit" value="Download TikTok Video">
     </form>
 
-    <script>
-        const canvas = document.getElementById('matrixCanvas');
-        const ctx = canvas.getContext('2d');
-        canvas.height = window.innerHeight;
-        canvas.width = window.innerWidth;
+    
 
-        const letters = '01';
-        const fontSize = 14;
-        const columns = canvas.width / fontSize;
-        const drops = Array(Math.floor(columns)).fill(1);
+       
 
-        function draw() {
-            ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
-            ctx.fillRect(0, 0, canvas.width, canvas.height);
-            ctx.fillStyle = '#00ff00';
-            ctx.font = fontSize + 'px monospace';
-            for (let i = 0; i < drops.length; i++) {
-                const text = letters[Math.floor(Math.random() * letters.length)];
-                ctx.fillText(text, i * fontSize, drops[i] * fontSize);
-                if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
-                    drops[i] = 0;
-                }
-                drops[i]++;
-            }
-        }
 
-        setInterval(draw, 33);
-    </script>
+    <footer align="center"><br><p>© 2023 Cyberpunk Video Hub. All rights reserved.</p>
+        <p>Created with ❤️ by Manish (Ankeman)</p></footer></body>
+    </footer>
 </body>
 </html>
